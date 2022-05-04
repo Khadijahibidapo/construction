@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Beau+Rivage&family=Pacifico&family=Raleway:wght@100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: 255, 136, 0; 
+    --green: 106, 159, 85; 
+    --blueviolent: 225, 13, 225;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    /* background: linear-gradient(rgb(255, 136, 0), rgb(106, 159, 85), rgb(225, 13, 225); */
+}
+/* NAVBAR SECTION */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* h1 {color:brown;
+    opacity: 0.5;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: 400;
+} */
+
+ul {
+    display: flex;
+    text-align: center;
+    background-color: rgba(255, 136, 0, 0.3);
+    backdrop-filter: blur(5px);
+    /* background-color: blueviolet; */
+    width: 100%;
+    margin: 0%;
+    padding: 3.5%;
+    justify-content: space-between;
+    /* text-decoration: none; */
+    list-style: none;
+    /* word-spacing: 1.5rem; */
+}
+
+li { 
+    /* text-decoration: none; */
+    font-family: fantasy;
+    font-size: larger;
+    display: block;
+    /* color: var(--green); */
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+#name {
+    color:rgb(251, 221, 185);
+    font-size: xx-large;
+    font-family: pacifico, cursive;
+    font-weight: bolder;
+}
+
+span {
+    font-size: x-small;
+    font-family: cursive;
+    font-style: oblique;
+    color:teal;
+    font-weight: bold;    
+}
+
+    /* .logo{position: absolute;
+    left: 1%;
+    top: 1%;
+    max-block-size: 10%;} */
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;}
+
+.hero-container {
+    background-image: url('images/construction-work1.jpg');
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero-text {
+    /* padding: 350px; */
+    width: 600px;
+    justify-content: center;
+    line-height: 1.5rem;
+    /* background: rgba(225, 13, 225, 0.5); */
+    margin-left: 350px;
+    padding-top: 300px;
+} 
+
+p {
+    font-size: xx-large;
+    color: var(--blueviolent);
+    font-family: raleway;
+    font-weight: bolder;
+    word-spacing: 1.5rem;
+    text-align: center;
+    /* background: rgba(225, 13, 225, 0.2); */
+    background: rgba(82, 77, 36, 0.3);
+    color:rgb(227, 205, 33);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+    text-shadow: 10px, 10px;
+}
+
+/* #click {
+    width: 400px;
+    color: black;
+} */
+
+.our-services {
+    width: 150px;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+#our-services-name {
+    font-size: x-large;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(125, 2, 125);
+}
+
+/* SERVICE SECTION */
+
+.service-items {
+    background: linear-gradient(270deg, rgba(52, 36, 16, 0.2), rgba(38, 75, 22, 0.2), rgba(64, 13, 64, 0.2));
+    opacity: 0.7;
+    display: flex;
+    overflow: hidden;
+    padding: 50px;
+    padding-left: 150px;
+    flex-flow: wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--green);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* opacity: unset; */
+}
+
+.residential {
+    position: relative;
+    width: 400px;
+    padding: 150px;
+    background-image: url(/images/residential.jpg);
+    opacity: 0.6;
+    background-position: left;
+    background-size: cover;
+    margin: 50px;
+    border-radius: 80px;
+    box-shadow: 50px 50px 30px rgba(100, 133, 165, 0.4);
+}
+
+.residential:hover {
+    width: 450px;  
+    opacity: 0.9;
+}
+
+.estate {
+    position: relative;
+    width: 400px;
+    padding: 150px;
+    background-image: url(/images/estate.jpg);
+    opacity: 0.6;
+    background-position: right;
+    background-size: cover;
+    margin: 50px;
+    border-radius: 80px;
+    box-shadow: 50px 50px 30px rgba(100, 133, 165, 0.4);
+}
+
+.estate:hover {
+    width: 450px;  
+    opacity: 0.9;
+}
+
+.office {
+    position: relative;
+    width: 400px;
+    padding: 150px;
+    background-image: url(/images/office.jpg);
+    opacity: 0.6;
+    background-position: right;
+    background-size: cover;
+    margin: 50px;
+    border-radius: 80px;
+    box-shadow: 50px 50px 30px rgba(100, 133, 165, 0.4);
+}
+
+.office:hover {
+    width: 450px;  
+    opacity: 0.9;
+}
+
+.malls-and-complex {
+    position: relative;
+    width: 400px;
+    padding: 150px;
+    background-image: url(/images/mall.jpg);
+    opacity: 0.6;
+    background-position: right;
+    background-size: cover;
+    margin: 50px;
+    border-radius: 80px;
+    box-shadow: 50px 50px 30px rgba(100, 133, 165, 0.4);
+}
+
+.malls-and-complex:hover {
+    width: 450px;  
+    opacity: 0.9;
+}
+
+/* REVIEW SECTION */
+
+.review-section {
+    /* background-image: url(/images/construction-cap.jpg);
+    background-size: cover;
+    background-attachment: scroll; */
+    /* opacity: 0.3; */
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.aduni-review {
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    /* color: aliceblue; */
+}
+
+.aduni-review-img-name {
+    display: flex;
+    align-items: center;
+    line-height: 0.5;
+
+}
+
+/* review images, names, titles and comments [img, h2, h3] */
+img {
+    width: 100px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: barlow semi condensed, sans-serif;
+    color: var(--blueviolent);
+}
+
+h3 {
+    padding: 20px;
+    background: rgba(225, 13, 225, 0.1);
+    margin-left: 140px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: var(--green);
+    border-radius: 10px;
+}
+
+.akanbi-review {
+    display: block;
+    margin-bottom: 5%;
+    /* margin-top: 5%; */
+}
+
+.akanbi-review-img-name {
+    display: flex;
+    align-items: center;
+    line-height: 0.5;
+}
+
+.ayinla-review {
+    display: block;
+    margin-bottom: 5%;
+    /* margin-top: 5%; */
+}
+
+.ayinla-review-img-name {
+    display: flex;
+    align-items: center;
+    line-height: 0.5;
+}
+
+.akanke-review {
+    display: block;
+    margin-bottom: 5%;
+    /* margin-top: 5%; */
+}
+
+.akanke-review-img-name {
+    display: flex;
+    align-items: center;
+    line-height: 0.5;
+}
+
+/* CONTACT SECTION */
+
+.contact-items {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    /* width: 100%; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.office-hours {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    color: var(--green);
+    padding-right: 30px;
+}
+
+.social-icons {
+    justify-content: space-between;
+    word-spacing: 10rem;
+    font-size: xx-large;
+    overflow: hidden;
+}
+
+/* footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+} */
